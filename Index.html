@@ -1,118 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Checkpoint HTML</title>
   </head>
   <body>
+    <div>
+      <header>
+        <h1>Welcome to my Checkpoint</h1> 
+      </header>
+      <nav class="navbar">
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <audio controls class="custom-audio">
+        <source src="Disfigure - Blank.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>
+        Welcome! i like programming and im currently doing a the Software
+        Development Course - Full Stack. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Molestiae, provident qui quaerat debitis ab earum
+        consequatur hic tempore consequuntur praesentium sapiente dolores
+        ratione laudantium et, perferendis perspiciatis accusamus possimus non!
+      </p>
+    </section>
 
-    <h1>Welcome to my Checkpoint</h1>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-  </div>
+    <section class="work" id="work">
+      <h2>My Work</h2>
+      <p>projects I have been working on:</p>
+      <ul>
+        <li><span style="text-decoration: underline;">Project:</span> making a website using html.</li>
+        <li><span style="text-decoration: underline;">Project:</span> styling the website using css.</li>
+      </ul>
+    </section>
 
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>Welcome! i like programming and im currently doing a the fullstack software developer course.</p>
-</section>
+    <section class="resume" id="resume">
+      <h2>Resume</h2>
+      <p>You can download my resume <a href="resume.pdf" download>here</a>.</p>
+    </section>
 
-<section class="work" id="work">
-  <h2>My Work</h2>
-  <p>project I have been working on:</p>
-  <ul>
-      <li>Project: creating a web site using html </li>
-  </ul>
-</section>
-
-<section class="resume" id="resume">
-  <h2>Resume</h2>
-  <p>You can download my resume <a href="resume.pdf" download>here</a>.</p>
-</section>
-
-<section class="contact" id="contact">
-  <h2>Contact Me</h2>
-  <form action="submit_form.php" method="post">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-  </form>
-</section><br>
-    <b>Bold text</b><br>
-    <i>for italic text lmao</i><br>
-    <small>small text example</small><br>
-    <del>deleted tag text</del><br>
-    <div></div>
-
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/olJOZp57FWM?si=XzgJOPgecFTvLUBD"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe><br>
-
-    <audio controls>      
-      <source src="Disfigure - Blank.mp3" type="audio/mpeg">
-        hawk
-    </audio>
-
-    <img src="dog.jpg"><br>
-
-        <h1>Table td tr</h1>
-        <table border="10">
-            <tr>
-                <th>name</th>
-                <th>age</tr>
-                <th>city</th>
-            </tr>
-            <tr>
-                <td>idris</td>
-                <td>23</td>
-                <td>Ariana</td>
-            </tr>
-            <tr>
-                <td>badis</td>
-                <td>27</td>
-                <td>tokyo</td>
-            </tr>
-        </table>
-
-    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-      Cum ut deserunt quod iste exercitationem sit repudiandae,
-      magnam tempora vel incidunt dolorem maxime in.
-      Tempore molestiae quas explicabo odit,
-      aliquam perspiciatis!
-    </p> -->
-
-<!-- <form>
-        <label for="name">Name:</label><br>
-        <input type="text"><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email"><br>
-
-        <input type="submit" value="submit">
-    </form> -->
-
-    <footer class="footer">
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form action="submit_form.php" method="post" class="form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="1" placeholder="Your Message" required>
+        </textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <div class="media"> 
+      <div class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/olJOZp57FWM?si=XzgJOPgecFTvLUBD"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="image">
+        <img src="dog.jpg" alt="image here" />
+      </div>
+    </div>
+    <footer class="about">
       <p>&copy; 2024 Mohamed Idriss Salhi. All rights reserved.</p>
       <p>
-          <a href="#home">Home</a> |
-          <a href="#about">About</a> |
-          <a href="#work">Work</a> |
-          <a href="#resume">Resume</a> |
-          <a href="#contact">Contact</a>
+        <a href="#home">Home</a> | <a href="#about">About</a> |
+        <a href="#work">Work</a> | <a href="#resume">Resume</a> |
+        <a href="#contact">Contact</a>
       </p>
-  </footer>
-
+    </footer>
   </body>
 </html>
+<div>
+  <!--<h1>Table td tr</h1>
+    <table border="4px">
+        <tr>
+            <th>name</th>
+            <th>age</tr>
+            <th>city</th>
+        </tr>
+        <tr>
+            <td>idris</td>
+            <td>23</td>
+            <td>Ariana</td>
+        </tr>
+        <tr>
+            <td>badis</td>
+            <td>27</td>
+            <td>tokyo</td>
+        </tr>
+    </table>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Cum ut deserunt quod iste exercitationem sit repudiandae,
+        magnam tempora vel incidunt dolorem maxime in.
+        Tempore molestiae quas explicabo odit,
+        aliquam perspiciatis!
+      </p> -->
+
+<!-- 
+<form>
+<label for="name">Name:</label><br>
+<input type="text"><br>
+
+<label for="email">Email:</label><br>
+<input type="email"><br>
+
+<input type="submit" value="submit">
+</form> 
+    <b>Bold text</b><br>
+<i>for italic text lmao</i><br>
+<small>small text example</small><br>
+<del>deleted tag text</del><br>
+--></div>
+
